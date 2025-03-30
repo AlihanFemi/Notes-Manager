@@ -13,7 +13,6 @@ export const AuthProvider = ({ children }) => {
                 setUser({
                     username: decodedToken.name,
                     userId: decodedToken.nameid,
-                    role: decodedToken.role,
                 });
             } else {
                 logout();
@@ -28,7 +27,6 @@ export const AuthProvider = ({ children }) => {
         setUser({
             username: decodedToken.name,
             userId: decodedToken.nameid,
-            role: decodedToken.role,
         });
     };
 

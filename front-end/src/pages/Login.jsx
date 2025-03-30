@@ -1,27 +1,27 @@
 import React, { useState } from 'react';
+import authService from '../services/authService';
+import { useAuth } from '../context/AuthContext';
+import { useNavigate } from 'react-router-dom';
 
 const LoginPage = () => {
   // State for form fields
-  const [email, setEmail] = useState('');
+  const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
-  
-  // State for error or success messages (optional)
+  const { login } = useAuth();
   const [error, setError] = useState(null);
+  const navigate = useNavigate();
 
-  // Handle form submission
   const handleSubmit = async (e) => {
     e.preventDefault();
     
-    // Replace the following with your login API call logic:
     try {
-      // For example, using fetch or axios:
-      // const response = await axios.post('/api/auth/login', { email, password });
-      // Save token to localStorage or state
-      console.log('Logging in with', { email, password });
+      const response = await authService.login(username, password);
+      login(response.token);
+      navigate('/');
       setError(null);
     } catch (err) {
       console.error('Login failed', err);
-      setError('Invalid email or password');
+      setError('Invalid username or password');
     }
   };
 
@@ -34,18 +34,18 @@ const LoginPage = () => {
         {error && <div className="mb-4 text-red-600">{error}</div>}
         
         <form onSubmit={handleSubmit}>
-          {/* Email Input */}
+          {/* Username Input */}
           <div className="mb-4">
-            <label htmlFor="email" className="block text-gray-700 font-medium mb-2">
-              Email
+            <label htmlFor="username" className="block text-gray-700 font-medium mb-2">
+              Username
             </label>
             <input
-              id="email"
-              type="email"
+              id="username"
+              type="text"
               className="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-400"
-              placeholder="you@example.com"
-              value={email}
-              onChange={(e) => setEmail(e.target.value)}
+              placeholder="Username..."
+              value={username}
+              onChange={(e) => setUsername(e.target.value)}
               required
             />
           </div>

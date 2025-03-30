@@ -1,35 +1,53 @@
 import React, { useState } from 'react';
+import authService from '../services/authService';
+import { useAuth } from '../context/AuthContext';
+import { useNavigate } from 'react-router-dom';
 
 const RegisterPage = () => {
-  const [email, setEmail] = useState('');
+  const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
   const [confirmPassword, setConfirmPassword] = useState('');
+  const [error, setError] = useState(null);
+  const {login} = useAuth();
+  const navigate = useNavigate();
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
     if (password !== confirmPassword) {
       alert('Passwords do not match!');
       return;
     }
-    console.log('Registering with:', email, password);
-    // TODO: Send registration request to backend
-  };
+    try{
+      await authService.register(username, password, confirmPassword);
+      const response = await authService.login(username, password);
+      login(response.token);
+      navigate('/');
+      setError(null);
+    }
+    catch(e){
+      console.error('Login failed', e);
+      setError('Invalid username or password');
+    }
+    };
 
   return (
     <div className="min-h-screen flex items-center justify-center bg-gray-100">
       <div className="bg-white p-8 rounded shadow-md w-full max-w-md">
         <h2 className="text-2xl font-bold mb-6 text-gray-800 text-center">Register</h2>
+
+        {error && <div className="mb-4 text-red-600">{error}</div>}
+
         <form onSubmit={handleSubmit}>
-          {/* Email Input */}
+          {/* Username Input */}
           <div className="mb-4">
-            <label htmlFor="email" className="block text-gray-700">Email</label>
+            <label htmlFor="username" className="block text-gray-700">Username</label>
             <input
-              id="email"
-              type="email"
-              value={email}
-              onChange={(e) => setEmail(e.target.value)}
+              id="username"
+              type="text"
+              value={username}
+              onChange={(e) => setUsername(e.target.value)}
               className="w-full px-4 py-2 border rounded focus:outline-none focus:ring-2 focus:ring-blue-400"
-              placeholder="you@example.com"
+              placeholder="Name..."
               required
             />
           </div>

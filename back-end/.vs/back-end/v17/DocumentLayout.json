@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "C:\\Users\\Alihan\\Desktop\\Files\\Code\\WebProgramming\\assignment-project\\back-end\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{C91F9283-78BF-4166-9C8E-EB256DE2D2AC}|back-end\\back-end.csproj|c:\\users\\alihan\\desktop\\files\\code\\webprogramming\\assignment-project\\back-end\\back-end\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C91F9283-78BF-4166-9C8E-EB256DE2D2AC}|back-end\\back-end.csproj|solutionrelative:back-end\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{C91F9283-78BF-4166-9C8E-EB256DE2D2AC}|back-end\\back-end.csproj|c:\\users\\alihan\\desktop\\files\\code\\webprogramming\\assignment-project\\back-end\\back-end\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C91F9283-78BF-4166-9C8E-EB256DE2D2AC}|back-end\\back-end.csproj|solutionrelative:back-end\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
@@ -19,15 +23,27 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "C:\\Users\\Alihan\\Desktop\\Files\\Code\\WebProgramming\\assignment-project\\back-end\\back-end\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "back-end\\Controllers\\AuthController.cs",
+              "ToolTip": "C:\\Users\\Alihan\\Desktop\\Files\\Code\\WebProgramming\\assignment-project\\back-end\\back-end\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "back-end\\Controllers\\AuthController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-30T18:34:17.467Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\Alihan\\Desktop\\Files\\Code\\WebProgramming\\assignment-project\\back-end\\back-end\\Program.cs",
               "RelativeDocumentMoniker": "back-end\\Program.cs",
               "ToolTip": "C:\\Users\\Alihan\\Desktop\\Files\\Code\\WebProgramming\\assignment-project\\back-end\\back-end\\Program.cs",
               "RelativeToolTip": "back-end\\Program.cs",
-              "ViewState": "AgIAAHAAAAAAAAAAAAAYwB8AAAAvAAAAAAAAAA==",
+              "ViewState": "AgIAABYAAAAAAAAAAAAYwCUAAAAPAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-27T11:30:30.634Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-27T11:30:30.634Z"
             }
           ]
         }

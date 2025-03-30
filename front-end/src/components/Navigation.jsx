@@ -1,8 +1,10 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
+import { useAuth } from '../context/AuthContext';
 
 const NavigationBar = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const { user } = useAuth();
 
   const toggleMobileMenu = () => {
     setIsMobileMenuOpen(!isMobileMenuOpen);
@@ -23,19 +25,31 @@ const NavigationBar = () => {
         </div>
 
         {/* Desktop Action Buttons */}
-        <div className="hidden md:flex space-x-4">
-            <Link to="/login">
-                <button className="bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 px-4 rounded">
-                    Login
-                </button>
-            </Link>
-            <Link to="/register">
-                <button className="bg-green-500 hover:bg-green-600 text-white font-semibold py-2 px-4 rounded">
-                    Register
-                </button>
-            </Link>
-        </div>
-
+        {!user ? (
+            <div className="hidden md:flex space-x-4">
+                <Link to="/login">
+                    <button className="bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 px-4 rounded">
+                        Login
+                    </button>
+                </Link>
+                <Link to="/register">
+                    <button className="bg-green-500 hover:bg-green-600 text-white font-semibold py-2 px-4 rounded">
+                        Register
+                    </button>
+                </Link>
+            </div>
+          ) : (
+            <button
+            onClick={() => {
+              localStorage.removeItem("token"); // Remove token on logout
+              window.location.reload(); // Reload to update UI
+            }}
+            className="bg-red-500 hover:bg-red-600 text-white font-semibold py-2 px-4 rounded"
+            >
+              Logout
+            </button>
+          )
+        }
         {/* Mobile Menu Toggle Button */}
         <div className="md:hidden">
           <button onClick={toggleMobileMenu}>

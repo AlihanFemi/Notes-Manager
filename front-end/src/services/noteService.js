@@ -15,10 +15,30 @@ const deleteNote = async (id) => {
    return response.status;
 }
 
+const getAllNotes = async (page = 1, pageSize = 10) => {
+    const response = await API.get(`/notes?page=${page}&pageSize=${pageSize}`);
+    return response.data;
+}
+
+const searchNotes = async (query, fromDate, toDate, page = 1, pageSize = 10) => {
+    const params = new URLSearchParams();
+    if (query) params.append("query", query);
+    if (fromDate) params.append("fromDate", fromDate);
+    if (toDate) params.append("toDate", toDate);
+    if (page) params.append("page", page);
+    if (pageSize) params.append("pageSize", pageSize);
+
+    const response = await API.get(`/notes/search?${params.toString()}`);
+    return response.data;
+}
+
+
 const noteService = {
    createNote,
    updateNote,
-   deleteNote
+   deleteNote,
+   getAllNotes,
+   searchNotes
 };
 
 export default noteService;

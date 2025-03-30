@@ -26,6 +26,16 @@ namespace back_end
             // Corss Origin Resource Sharing === CORS
             var corsSetting = builder.Configuration.GetSection("CORS");
             var corsFrontEndUrl = corsSetting["FrontEnd"];
+            builder.Services.AddCors(options =>
+            {
+                options.AddPolicy("AllowFrontend",
+                    policy =>
+                    {
+                        policy.WithOrigins(corsFrontEndUrl!)
+                            .AllowAnyHeader()
+                            .AllowAnyMethod();
+                    });
+            });
 
             // Services
             builder.Services.AddControllers();

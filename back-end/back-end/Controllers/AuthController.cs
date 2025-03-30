@@ -27,6 +27,11 @@ namespace back_end.Controllers
         [HttpPost("register")]
         public async Task<IActionResult> Register([FromBody] Register model)
         {
+            if(model.Password != model.RepeatPassword)
+            {
+                return BadRequest("Passwords do not match");
+            }
+
             var user = new ApplicationUser
             {
                 UserName = model.Username
