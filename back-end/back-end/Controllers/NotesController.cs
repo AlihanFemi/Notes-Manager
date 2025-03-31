@@ -19,7 +19,7 @@ namespace back_end.Controllers
             _noteService = noteService;
         }
         [HttpGet]
-        public async Task<IActionResult> GetUserNotes([FromQuery] int page = 1, [FromQuery] int pageSize = 10)
+        public async Task<IActionResult> GetUserNotes([FromQuery] int page = 1, [FromQuery] int pageSize = 9)
         {
             var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
             var notes = await _noteService.GetNotesAsync(userId!, page, pageSize);

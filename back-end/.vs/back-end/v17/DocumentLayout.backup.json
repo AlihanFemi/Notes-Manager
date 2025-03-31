@@ -38,8 +38,7 @@
               "RelativeToolTip": "back-end\\Services\\NoteService.cs",
               "ViewState": "AgIAAHwAAAAAAAAAAAAwwHwAAAAwAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-31T11:13:59.039Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-31T11:13:59.039Z"
             },
             {
               "$type": "Document",
@@ -51,8 +50,7 @@
               "RelativeToolTip": "back-end\\DTO\\NoteDTO.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-31T11:13:33.762Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-31T11:13:33.762Z"
             },
             {
               "$type": "Document",
@@ -62,7 +60,7 @@
               "RelativeDocumentMoniker": "back-end\\Controllers\\NotesController.cs",
               "ToolTip": "C:\\Users\\Alihan\\Desktop\\Files\\Code\\WebProgramming\\assignment-project\\back-end\\back-end\\Controllers\\NotesController.cs",
               "RelativeToolTip": "back-end\\Controllers\\NotesController.cs",
-              "ViewState": "AgIAAC4AAAAAAAAAAAAuwEEAAADEAAAAAAAAAA==",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAgwBUAAABsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-31T11:10:20.578Z",
               "EditorCaption": ""
@@ -77,8 +75,7 @@
               "RelativeToolTip": "back-end\\Program.cs",
               "ViewState": "AgIAABYAAAAAAAAAAAAYwCYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-27T11:30:30.634Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-27T11:30:30.634Z"
             }
           ]
         }

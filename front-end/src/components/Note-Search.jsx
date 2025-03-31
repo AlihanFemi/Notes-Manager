@@ -42,7 +42,7 @@ function SearchNotes({ onFilter, open, setOpen }) {
                     value={query}
                     onChange={(e) => setQuery(e.target.value)}
                     className="w-full p-2 border rounded mt-2"
-                    placeholder="Search tasks..."
+                    placeholder="Search notes title..."
                 />
             </div>
 
