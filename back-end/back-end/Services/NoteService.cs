@@ -31,7 +31,8 @@ namespace back_end.Services
             {
                 Id = note.Id,
                 Title = note.Title,
-                Description = note.Description
+                Description = note.Description,
+                CreatedAt = note.CreatedAt
             };
         }
         public async Task<bool> UpdateNoteAsync(string userId, UpdateNoteDTO noteDTO)
@@ -78,7 +79,8 @@ namespace back_end.Services
                 {
                     Id = x.Id,
                     Title = x.Title,
-                    Description = x.Description
+                    Description = x.Description,
+                    CreatedAt = x.CreatedAt
                 })
                 .ToListAsync();
 
@@ -120,7 +122,8 @@ namespace back_end.Services
                 {
                     Id = x.Id,
                     Title = x.Title,
-                    Description = x.Description
+                    Description = x.Description,
+                    CreatedAt = x.CreatedAt
                 })
                 .ToListAsync();
             

@@ -63,7 +63,7 @@ namespace back_end.Controllers
             return NotFound("Note not found or not authorized to delete.");
         }
         [HttpGet("search")]
-        public async Task<IActionResult> SearchNotes([FromQuery] string? query, [FromQuery] DateTime? fromDate, [FromQuery] DateTime? toDate, [FromQuery] int page = 1, [FromQuery] int pageSize = 10)
+        public async Task<IActionResult> SearchNotes([FromQuery] string? query, [FromQuery] DateTime? fromDate, [FromQuery] DateTime? toDate, [FromQuery] int page = 1, [FromQuery] int pageSize = 9)
         {
             var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
             var notes = await _noteService.SearchNotesAsync(userId!, query, fromDate, toDate, page, pageSize);

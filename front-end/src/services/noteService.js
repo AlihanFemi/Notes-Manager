@@ -1,5 +1,7 @@
 import API from './api.js'; 
 
+const pageSize = 9;
+
 const createNote = async (noteData) => {
     const response = await API.post('/notes', noteData);
     return response.data;
@@ -15,12 +17,12 @@ const deleteNote = async (id) => {
    return response.status;
 }
 
-const getAllNotes = async (page = 1, pageSize = 10) => {
+const getAllNotes = async (page = 1, pageSize) => {
     const response = await API.get(`/notes?page=${page}&pageSize=${pageSize}`);
     return response.data;
 }
 
-const searchNotes = async (query, fromDate, toDate, page = 1, pageSize = 10) => {
+const searchNotes = async (query, fromDate, toDate, page = 1, pageSize) => {
     const params = new URLSearchParams();
     if (query) params.append("query", query);
     if (fromDate) params.append("fromDate", fromDate);

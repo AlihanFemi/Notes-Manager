@@ -19,11 +19,6 @@ const NavigationBar = () => {
           Notes Manager
         </div>
 
-        {/* Desktop Navigation Links */}
-        <div className="flex space-x-4">
-          <Link to="/" className="text-white hover:text-gray-300">Home</Link>
-        </div>
-
         {/* Desktop Action Buttons */}
         {!user ? (
             <div className="hidden md:flex space-x-4">
@@ -39,15 +34,17 @@ const NavigationBar = () => {
                 </Link>
             </div>
           ) : (
-            <button
-            onClick={() => {
-              localStorage.removeItem("token"); // Remove token on logout
-              window.location.reload(); // Reload to update UI
-            }}
-            className="bg-red-500 hover:bg-red-600 text-white font-semibold py-2 px-4 rounded"
-            >
-              Logout
-            </button>
+            <div className="hidden md:flex space-x-4">
+              <button
+              onClick={() => {
+                localStorage.removeItem("token");
+                window.location.reload();
+              }}
+              className="bg-red-500 hover:bg-red-600 text-white font-semibold py-2 px-4 rounded"
+              >
+                Logout
+              </button>
+            </div>
           )
         }
         {/* Mobile Menu Toggle Button */}
@@ -65,15 +62,31 @@ const NavigationBar = () => {
       {isMobileMenuOpen && (
         <div className="md:hidden">
           <div className="px-2 pt-2 pb-3 space-y-1">
-            <a href="#" className="block text-gray-300 hover:text-white">Home</a>
-            <a href="#" className="block text-gray-300 hover:text-white">Notes</a>
-            <a href="#" className="block text-gray-300 hover:text-white">Profile</a>
-            <button className="w-full bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 px-4 rounded">
-              Login
-            </button>
-            <button className="w-full bg-green-500 hover:bg-green-600 text-white font-semibold py-2 px-4 rounded">
-              Register
-            </button>
+              {!user ? (
+                <div>
+                    <Link to="/login">
+                        <button className="w-full bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 px-4 rounded">
+                            Login
+                        </button>
+                    </Link>
+                    <Link to="/register">
+                        <button className="w-full bg-green-500 hover:bg-green-600 text-white font-semibold py-2 px-4 rounded">
+                            Register
+                        </button>
+                    </Link>
+                </div>
+              ) : (
+                <button
+                onClick={() => {
+                  localStorage.removeItem("token");
+                  window.location.reload();
+                }}
+                className="w-full bg-red-500 hover:bg-red-600 text-white font-semibold py-2 px-4 rounded"
+                >
+                  Logout
+                </button>
+              )
+            }
           </div>
         </div>
       )}
