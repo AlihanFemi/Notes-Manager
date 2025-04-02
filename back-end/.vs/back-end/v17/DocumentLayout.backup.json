@@ -3,20 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\Alihan\\Desktop\\Files\\Code\\WebProgramming\\assignment-project\\back-end\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{C91F9283-78BF-4166-9C8E-EB256DE2D2AC}|back-end\\back-end.csproj|c:\\users\\alihan\\desktop\\files\\code\\webprogramming\\assignment-project\\back-end\\back-end\\controllers\\notescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C91F9283-78BF-4166-9C8E-EB256DE2D2AC}|back-end\\back-end.csproj|solutionrelative:back-end\\controllers\\notescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C91F9283-78BF-4166-9C8E-EB256DE2D2AC}|back-end\\back-end.csproj|c:\\users\\alihan\\desktop\\files\\code\\webprogramming\\assignment-project\\back-end\\back-end\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C91F9283-78BF-4166-9C8E-EB256DE2D2AC}|back-end\\back-end.csproj|solutionrelative:back-end\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{C91F9283-78BF-4166-9C8E-EB256DE2D2AC}|back-end\\back-end.csproj|c:\\users\\alihan\\desktop\\files\\code\\webprogramming\\assignment-project\\back-end\\back-end\\services\\noteservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C91F9283-78BF-4166-9C8E-EB256DE2D2AC}|back-end\\back-end.csproj|solutionrelative:back-end\\services\\noteservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C91F9283-78BF-4166-9C8E-EB256DE2D2AC}|back-end\\back-end.csproj|c:\\users\\alihan\\desktop\\files\\code\\webprogramming\\assignment-project\\back-end\\back-end\\dto\\notedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C91F9283-78BF-4166-9C8E-EB256DE2D2AC}|back-end\\back-end.csproj|solutionrelative:back-end\\dto\\notedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C91F9283-78BF-4166-9C8E-EB256DE2D2AC}|back-end\\back-end.csproj|c:\\users\\alihan\\desktop\\files\\code\\webprogramming\\assignment-project\\back-end\\back-end\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C91F9283-78BF-4166-9C8E-EB256DE2D2AC}|back-end\\back-end.csproj|solutionrelative:back-end\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,7 +18,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
@@ -36,46 +28,22 @@
               "RelativeDocumentMoniker": "back-end\\Services\\NoteService.cs",
               "ToolTip": "C:\\Users\\Alihan\\Desktop\\Files\\Code\\WebProgramming\\assignment-project\\back-end\\back-end\\Services\\NoteService.cs",
               "RelativeToolTip": "back-end\\Services\\NoteService.cs",
-              "ViewState": "AgIAAHwAAAAAAAAAAAAwwHwAAAAwAAAAAAAAAA==",
+              "ViewState": "AgIAAEwAAAAAAAAAAAAjwGAAAACQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-31T11:13:59.039Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "NoteDTO.cs",
-              "DocumentMoniker": "C:\\Users\\Alihan\\Desktop\\Files\\Code\\WebProgramming\\assignment-project\\back-end\\back-end\\DTO\\NoteDTO.cs",
-              "RelativeDocumentMoniker": "back-end\\DTO\\NoteDTO.cs",
-              "ToolTip": "C:\\Users\\Alihan\\Desktop\\Files\\Code\\WebProgramming\\assignment-project\\back-end\\back-end\\DTO\\NoteDTO.cs",
-              "RelativeToolTip": "back-end\\DTO\\NoteDTO.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAtAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-31T11:13:33.762Z"
+              "WhenOpened": "2025-03-31T15:51:53.667Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "NotesController.cs",
-              "DocumentMoniker": "C:\\Users\\Alihan\\Desktop\\Files\\Code\\WebProgramming\\assignment-project\\back-end\\back-end\\Controllers\\NotesController.cs",
-              "RelativeDocumentMoniker": "back-end\\Controllers\\NotesController.cs",
-              "ToolTip": "C:\\Users\\Alihan\\Desktop\\Files\\Code\\WebProgramming\\assignment-project\\back-end\\back-end\\Controllers\\NotesController.cs",
-              "RelativeToolTip": "back-end\\Controllers\\NotesController.cs",
-              "ViewState": "AgIAAAcAAAAAAAAAAAAgwBUAAABsAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-31T11:10:20.578Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\Alihan\\Desktop\\Files\\Code\\WebProgramming\\assignment-project\\back-end\\back-end\\Program.cs",
               "RelativeDocumentMoniker": "back-end\\Program.cs",
               "ToolTip": "C:\\Users\\Alihan\\Desktop\\Files\\Code\\WebProgramming\\assignment-project\\back-end\\back-end\\Program.cs",
               "RelativeToolTip": "back-end\\Program.cs",
-              "ViewState": "AgIAABYAAAAAAAAAAAAYwCYAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAG4AAAAAAAAAAAApwHoAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-27T11:30:30.634Z"
+              "WhenOpened": "2025-03-27T11:30:30.634Z",
+              "EditorCaption": ""
             }
           ]
         }

@@ -42,7 +42,6 @@ function HomePage() {
             setIsLoading(true);
             const response = await noteService.getAllNotes(page, pageSize);
             
-            console.log(response)
             // Match API response properties exactly
             setTotalPages(response.pageCount);
             setCurrentPage(response.page);
@@ -68,18 +67,11 @@ function HomePage() {
         try {
             setIsLoading(true);
             const { query, fromDate, toDate } = filters;
-            const data = await noteService.searchNotes(
-                query, 
-                fromDate, 
-                toDate, 
-                currentPage, 
-                pageSize
-            );
-            
+            const data = await noteService.searchNotes(query, fromDate, toDate,1, pageSize);
             // Use same API response structure
-            setNotes(data.Notes || []);
+            setNotes(data.notes || []);
             setTotalPages(data.PageCount);
-            setCurrentPage(data.Page);
+            setCurrentPage(data.page);
         } catch (error) {
             console.error("Error filtering notes:", error);
         } finally {

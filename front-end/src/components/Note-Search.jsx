@@ -15,7 +15,6 @@ function SearchNotes({ onFilter, open, setOpen }) {
         setQuery("");
         setFromDate("");
         setToDate("");
-        onReset();
     };
 
     return (
